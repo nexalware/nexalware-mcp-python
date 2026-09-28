@@ -1,0 +1,2 @@
+# nexalware-mcp
+MCP server
