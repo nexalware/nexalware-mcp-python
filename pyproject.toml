@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nexalware-mcp"
+version = "0.1.2"
+description = "Nexalware as an MCP server (Python) - lets any MCP-aware agent host (Claude Desktop, Claude Code, Cursor, etc.) discover and call your device control tools automatically."
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+authors = [{ name = "Nexalware" }]
+keywords = ["nexalware", "mcp", "model-context-protocol", "iot", "device-control", "robotics", "claude"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+    "Typing :: Typed",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Home Automation",
+]
+dependencies = [
+    "mcp>=2.0",
+    "nexalware>=0.1.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/nexalware/nexalware-mcp-python"
+Documentation = "https://docs.nexalware.com/docs/sdk/mcp-server-python"
+Repository = "https://github.com/nexalware/nexalware-mcp-python"
+Issues = "https://github.com/nexalware/nexalware-mcp-python/issues"
+
+[project.scripts]
+nexalware-mcp = "nexalware_mcp.__main__:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+nexalware_mcp = ["py.typed"]
