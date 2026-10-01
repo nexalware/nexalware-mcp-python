@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "nexalware-mcp"
-version = "0.1.2"
+version = "0.1.3"
 description = "Nexalware as an MCP server (Python) - lets any MCP-aware agent host (Claude Desktop, Claude Code, Cursor, etc.) discover and call your device control tools automatically."
 readme = "README.md"
 requires-python = ">=3.10"
